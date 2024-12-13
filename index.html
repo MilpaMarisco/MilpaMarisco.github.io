@@ -1367,19 +1367,24 @@
 
               <div class="info-box">
                 <h6>Lugar</h6>
-                <p>Salon _____</p>
+                <p>Salon de recepción "Daniela"</p>
                 <!-- <a href="https://wa.link/94tgn4" data-evento="Fiesta" class="boton" target="_blank" confirmar-asistencia>Confirmar asistencia</a> -->
+                <!--
                 <a
                   href="#"
                   data-evento="Fiesta"
                   class="boton confirmar-asistencia"
                   >Confirmar asistencia</a
-                >
+                > -->
               </div>
 
               <div class="info-box">
                 <h6>Dirección</h6>
-                <p>Av. Lima B12, Hualmay, Huaura</p>
+                <p>Mariscal Castilla 277, Huacho 15137, Perú</p>
+                
+                <p>
+                  Frente al Hotel "La casa de Algodón"
+                </p>
                 <a href="#" data-evento="Fiesta" class="boton modal-como-llegar"
                   >¿Cómo llegar?</a
                 >
@@ -1388,16 +1393,16 @@
               <div class="info-box">
                 <h6>Regalo</h6>
                 <p>
-                  Tu presencia es nuestro mejor regalo.
+                  Gracias por ser parte de este momento tan especial. Tu regalo será recibido con mucho cariño.
                 </p>
                 <!-- <a href="#" data-evento="Fiesta" class="boton modal-como-llegar"></a> -->
                 <a href="#" class="boton modal-tarjeta">+ Info</a>
               </div>
               <div class="info-box">
                 <h6>Contacto</h6>
-                <p>Contactanos por cualquier duda.</p>
+                <p>Contáctenos para confirmar asistencia.</p>
                 <a
-                  href="https://wa.link/iw8hv7"
+                  href="https://wa.link/aaef8f"
                   data-evento="Fiesta"
                   class="boton"
                   target="_blank"
@@ -1803,11 +1808,19 @@
               </div>
 
               <p>
-                ¿Cuál es la canción que no debe faltar en la PlayList de la
-                fiesta?
+                ¿Qué canción no puede faltar en la fiesta? Escríbenos y la añadimos. 🎶
               </p>
 
-              <a href="#" class="boton sugerir-cancion">Sugerir canción</a>
+
+              <div class="info-box">
+                <a
+                  href="https://wa.link/dac2ss"
+                  data-evento="Fiesta"
+                  class="boton"
+                  target="_blank"
+                  >Whatsapp</a
+                >
+              </div>
             </div>
           </div>
           <!-- Dress Code -->
@@ -2463,7 +2476,7 @@
         </div>
       </div>
     </div>
-    <!-- Modal sugerir cancion-->
+    <!-- Modal sugerir cancion
     <div id="modalSugerirCancion" class="modal fade" tabindex="-1">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
@@ -2487,6 +2500,7 @@
 
           <div class="modal-body">
             <div class="formulario-content">
+                
               <form id="formSugerirCancion" action="">
                 <div class="form-group">
                   <input
@@ -2532,6 +2546,7 @@
         </div>
       </div>
     </div>
+    -->
     <!-- Modal vestuario-->
     <div id="modalVestuario" class="modal fade" tabindex="-1">
       <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -2556,8 +2571,11 @@
 
           <div class="modal-body">
             <p>
-              El Dress Code para mi fiesta es 'Siéntete cómodo'. Te invitamos a
-              vestirte con lo que te haga sentir bien y a gusto
+              La ocasión merece un atuendo formal:
+
+Hombres: Terno completo.
+Mujeres: Vestido elegante.
+Les solicitamos evitar el negro y el rojo para mantener la atmósfera adecuada al evento. Agradecemos de antemano su comprensión y atención a este detalle.
             </p>
           </div>
           <div class="modal-footer"></div>
@@ -2618,7 +2636,7 @@
           </div>
 
           <div class="modal-body">
-            El detalle es completamente voluntario y será recibido con todo nuestro agradecimiento y cariño. Lo importante para nosotros es compartir este momento especial contigo. Gracias por ser parte de este día tan importante.
+            Para nosotros, compartir este día contigo es lo más importante. Si deseas acompañarnos con un detalle extra lo agradeceremos mucho, además estaremos recibiendo una lluvia de sobres con mucha gratitud y amor. ¡Gracias por ayudarnos a hacer de este día algo inolvidable!
           </div>
 
           <div class="modal-footer">Confirmar asistencia por favor.</div>
@@ -2680,11 +2698,11 @@
       // Idioma js en MODELO e INVITACION
       var langJsVariante = "es-PE";
       // Cuenta regresiva
-      var fechaCuentaRegresiva = "12/28/2024 20:30:00";
+      var fechaCuentaRegresiva = "12/28/2024 19:30:00";
 
       // Mapas
-      var latitudFiesta = -10;
-      var longitudFiesta = -60;
+      var latitudFiesta = -11.104159108033498;
+      var longitudFiesta =  -77.60437873372962;
     </script>
 
     <!-- Idioma por defecto js -->
@@ -3117,13 +3135,13 @@
         $("#eventoAsistencia").val(evento);
 
         if (evento == "Fiesta") {
-          var titleModalAsistencia = "¿Venís a mi fiesta?";
+          var titleModalAsistencia = "Vienes a mi fiesta?";
           var rutaImgModalAsistencia =
             _pathProducto + "img/img_circuloFiesta.svg";
         }
 
         if (evento == "Ceremonia") {
-          var titleModalAsistencia = "¿Venís a mi fiesta?";
+          var titleModalAsistencia = "¿Vienes a mi fiesta?";
           var rutaImgModalAsistencia =
             _pathProducto + "img/img_circuloCeremonia.svg";
         }
@@ -3542,7 +3560,7 @@
         var evento = $(this).attr("data-evento");
 
         if (evento == "Fiesta") {
-          var titleModalMapa = "Salon ______";
+          var titleModalMapa = 'Salon de recepción "Daniela"';
 
           var latitudMapa = latitudFiesta;
           var longitudMapa = longitudFiesta;
@@ -3825,16 +3843,16 @@
       if (device == "mobile" || $(window).width() < 768) {
         // Aceptar webp?
         if (support_format_webp()) {
-          var imageParallax = "./img/portada-mobile_old.webp";
+          var imageParallax = "./img/fondo.webp";
         } else {
-          var imageParallax = "./img/portada-mobile_old.jpg";
+          var imageParallax = "./img/fondo.jpg";
         }
       } else {
         // Aceptar webp?
         if (support_format_webp()) {
-          var imageParallax = "./img/portada-3_old.webp";
+          var imageParallax = "./img/fondo.webp";
         } else {
-          var imageParallax = "./img/portada-3.jpg";
+          var imageParallax = "./img/fondo.jpg";
         }
       }
 
