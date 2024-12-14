@@ -269,6 +269,13 @@
     line-height:110px;
     margin-bottom:0
   }
+
+  h4{
+    font-family: 'DM Serif Display', serif;
+    font-size: 40px;
+    line-height: 40px;
+
+  }
   
   section.portada .content-portada h2{
     width: 100%;
