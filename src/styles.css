@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(
+    135deg,
+    #ffe6f0,
+    #ffb6c1,
+    #ff69b4,
+    #ff8da1,
+    #ffc0cb,
+    #ff99cc,
+    #ffe6f0
+  );
+  background-size: 500%;
+  animation: fanimado 60s ease-in-out infinite;
+}
+
+.contenedor {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  padding: 2%;
+}
+
+p {
+  font-size: xx-large;
+  padding: 5%;
+  color: #fff;
+}
+
+button {
+  font-size: xx-large;
+  padding: 0.75em;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.9);
+}
+
+#yesBtn {
+  transform: translate(-100%, 0);
+  width: 10%;
+  border-radius: 40px;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid white;
+  box-shadow: inset 0 0 5px #ff69b4, 0 0 20px #ffb6c1;
+  text-align: center;
+  color: white;
+}
+
+#noBtn {
+  position: absolute;
+  width: 10%;
+  border-radius: 40px;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid white;
+  box-shadow: inset 0 0 5px #ff99cc, 0 0 20px #ff66b2;
+  color: white;
+}
+
+@keyframes fanimado {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  box-shadow: inset 0 0 10px #ff69b4, 0 0 20px #ff99cc;
+  border-radius: 60px;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+.letra-neon {
+  font-family: "Dancing Script", cursive;
+  margin: 0;
+  font-size: 50px;
+  text-shadow: 0 0 5px #ff99cc, 0 0 15px #ff66b2,
+    0 0 30px #ffb6c1, 0 0 50px #ff69b4;
+}
+
+.neon3 {
+  font-family: monospace;
+  margin: 0;
+  padding: 10px;
+  font-size: 30px;
+  text-shadow: 0 0 5px #fff, 0 0 15px #ffc0cb, 0 0 30px #ff66b2;
+}
+
+.flicker1 {
+  animation: parpadear 2s infinite steps(3);
+}
+.flicker2 {
+  animation: parpadear 2.5s infinite steps(4);
+}
+.flicker3 {
+  animation: parpadear 1.5s infinite steps(2);
+}
+
+@keyframes parpadear {
+  to {
+    color: #ffd6e7;
+    text-shadow: none;
+  }
+}
+
+/* burbujas */
+.burbuja {
+  border-radius: 50%;
+  background: rgba(255, 182, 193, 0.4);
+  position: absolute;
+  bottom: -150px;
+  animation: burbujas 6s ease-in-out infinite;
+}
+
+.burbuja:nth-child(1) {
+  width: 80px;
+  height: 80px;
+  left: 5%;
+  animation-delay: 2s;
+}
+
+.burbuja:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  left: 35%;
+  animation-delay: 3s;
+}
+
+.burbuja:nth-child(3) {
+  width: 25px;
+  height: 25px;
+  left: 15%;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(4) {
+  width: 50px;
+  height: 50px;
+  left: 90%;
+  animation-delay: 4s;
+}
+
+.burbuja:nth-child(5) {
+  width: 70px;
+  height: 70px;
+  left: 65%;
+  animation-delay: 1s;
+}
+
+.burbuja:nth-child(6) {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation-delay: 6s;
+}
+
+.burbuja:nth-child(7) {
+  width: 20px;
+  height: 20px;
+  left: 48%;
+  animation-delay: 4s;
+}
+
+.burbuja:nth-child(8) {
+  width: 90px;
+  height: 90px;
+  left: 52%;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(9) {
+  width: 65px;
+  height: 65px;
+  left: 51%;
+  animation-delay: 2s;
+}
+
+.burbuja:nth-child(10) {
+  width: 40px;
+  height: 40px;
+  left: 35%;
+  animation-delay: 7s;
+}
+
+@keyframes burbujas {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(30px);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    bottom: 100vh;
+    opacity: 0;
+  }
+}
+
+@keyframes movimiento {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
